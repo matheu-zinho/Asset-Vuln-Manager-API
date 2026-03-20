@@ -1,20 +1,14 @@
-# ??? Asset & Vulnerability Manager API
+# ğŸ›¡ï¸ Asset & Vulnerability Manager API
+Uma API robusta desenvolvida em **.NET 8** para o gerenciamento de ativos de rede e monitoramento de vulnerabilidades. Este projeto foi focado em boas prÃ¡ticas de desenvolvimento e seguranÃ§a de dados.
 
-Uma API robusta desenvolvida em **.NET 8** para o gerenciamento de ativos de rede e monitoramento de vulnerabilidades. Este projeto foi focado em boas práticas de desenvolvimento e segurança de dados.
-
-## ?? Tecnologias Utilizadas
+## ğŸš€ Tecnologias Utilizadas
 * **C# / ASP.NET Core 8**
 * **Entity Framework Core** (ORM)
 * **SQLite** (Banco de Dados Local)
-* **Swagger/OpenAPI** (Documentação e Testes)
+* **Swagger/OpenAPI** (DocumentaÃ§Ã£o e Testes)
 
-## ?? Implementações de Segurança
-Como estudante de **Segurança da Informação**, foquei em camadas de proteção essenciais:
-* **Input Validation:** Uso de *Data Annotations* para impedir Injeção de Dados Inválidos e garantir formatos de IP corretos via Regex.
-* **Sensitive Data Protection:** Configuração de `.gitignore` para impedir o vazamento de bancos de dados locais (`.db`) em repositórios públicos.
-* **Architecture:** Separação clara entre Models, Data e Controllers para manter a integridade do código.
-
-## ??? Como rodar o projeto
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
+## ğŸ” ImplementaÃ§Ãµes de SeguranÃ§a
+Como estudante de **SeguranÃ§a da InformaÃ§Ã£o**, foquei em camadas de proteÃ§Ã£o essenciais:
+* **Input Validation:** Uso de *Data Annotations* para impedir InjeÃ§Ã£o de Dados InvÃ¡lidos e garantir formatos de IP corretos via Regex.
+* **Sensitive Data Protection:** ConfiguraÃ§Ã£o de `.gitignore` para impedir o vazamento de bancos de dados locais (`.db`) em repositÃ³rios pÃºblicos.
+* **Architecture:** SeparaÃ§Ã£o clara entre Models, Data e Controllers para manter a integridade do cÃ³digo.
