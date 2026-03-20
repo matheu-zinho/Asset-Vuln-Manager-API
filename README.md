@@ -12,8 +12,3 @@ Como estudante de **Segurança da Informação**, foquei em camadas de proteçã
 * **Input Validation:** Uso de *Data Annotations* para impedir Injeção de Dados Inválidos e garantir formatos de IP corretos via Regex.
 * **Sensitive Data Protection:** Configuração de `.gitignore` para impedir o vazamento de bancos de dados locais (`.db`) em repositórios públicos.
 * **Architecture:** Separação clara entre Models, Data e Controllers para manter a integridade do código.
-
-## 🛠️ Como rodar o projeto
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
