@@ -16,4 +16,4 @@ Como estudante de **Segurança da Informação**, foquei em camadas de proteçã
 ## 🛠️ Como rodar o projeto
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
+   git clone https://github.com/seu-usuario/seu-repositorio.git
