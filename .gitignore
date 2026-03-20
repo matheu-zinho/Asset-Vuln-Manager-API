@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Banco de dados do projeto (SQLite)
+*.db
+*.db-shm
+*.db-wal
+
+# Pastas de compilação
+bin/
+obj/
