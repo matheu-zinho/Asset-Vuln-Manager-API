@@ -30,7 +30,7 @@ namespace Asset___Vuln_Manager_.API.Migrations
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
-        
+        {
             migrationBuilder.DropTable(
                 name: "Assets");
         }
