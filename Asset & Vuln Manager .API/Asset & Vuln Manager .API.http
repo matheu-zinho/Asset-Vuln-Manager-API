@@ -1,0 +1,6 @@
+@Asset___Vuln_Manager_.API_HostAddress = http://localhost:5073
+
+GET {{Asset___Vuln_Manager_.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
