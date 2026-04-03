@@ -26,5 +26,16 @@ namespace Asset___Vuln_Manager_.API.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetAssets), new { id = asset.Id }, asset); // o método PostAsset é um endpoint que permite criar um novo ativo. Ele recebe um objeto do tipo Asset como parâmetro, adiciona esse ativo ao contexto do banco de dados (_context) e salva as alterações. Em seguida, retorna uma resposta HTTP 201 Created com a localização do novo recurso criado usando CreatedAtAction, que aponta para o método GetAssets para recuperar o ativo recém-criado.
         }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Asset>> GetAsset(int id)// o método GetAsset é um endpoint que retorna um ativo específico com base no ID fornecido. Ele é assíncrono e retorna um ActionResult contendo um objeto do tipo Asset.
+        {
+            var asset = await _context.Assets.FindAsync(id);
+            if (asset == null)
+            {
+                return NotFound("Ativo não encontrado");
+            }
+            return asset;
+
+        }
     }
 }

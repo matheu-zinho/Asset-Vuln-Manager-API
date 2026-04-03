@@ -4,6 +4,7 @@ namespace Asset___Vuln_Manager_.API.Models
     public class Asset
     {
         //Id: Um identificador único para cada ativo, geralmente usado como chave primária no banco de dados.
+        [Key]
         public int Id { get; set; }
         //Name: O nome do ativo, que pode ser usado para identificar o dispositivo ou sistema.
         [Required(ErrorMessage = "O campo Name é obrigatório.")]
