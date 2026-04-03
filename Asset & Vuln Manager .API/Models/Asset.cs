@@ -7,10 +7,12 @@ namespace Asset___Vuln_Manager_.API.Models
         public int Id { get; set; }
         //Name: O nome do ativo, que pode ser usado para identificar o dispositivo ou sistema.
         [Required(ErrorMessage = "O campo Name é obrigatório.")]
+        [StringLength(100, ErrorMessage = "O campo Name deve ter no máximo 100 caracteres.")]
         public string Name { get; set; } = string.Empty;
         //IpAddress: O endereço IP do ativo, que pode ser usado para localizar o dispositivo na rede.
         [Required(ErrorMessage = "O campo IpAddress é obrigatório.")]
-        [RegularExpression(@"^(\d{1,3}\.){3}\d{1,3}$", ErrorMessage = "IP Inválido")]
+        [RegularExpression(@"^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",
+            ErrorMessage = "IP Inválido! Use o formato 0.0.0.0 até 255.255.255.255")]
         public string IpAddress { get; set; } = string.Empty;
         //LastSeen: A data e hora em que o ativo foi visto pela última vez na rede, o que pode ser útil para monitorar a atividade do dispositivo e identificar possíveis problemas de segurança.
         public DateTime LastSeen { get; set; }
