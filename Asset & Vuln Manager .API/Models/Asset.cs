@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations; //Adiciona a diretiva using para o namespace System.ComponentModel.DataAnnotations, que contém atributos de validação de dados usados para validar as propriedades da classe Asset, como [Required] ou [StringLength].
 namespace Asset___Vuln_Manager_.API.Models
 {
-    public class Asset
+    public class Asset //classe que representa a tabela no banco de dados
     {
         //Id: Um identificador único para cada ativo, geralmente usado como chave primária no banco de dados.
         [Key]
